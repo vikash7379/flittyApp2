@@ -1,0 +1,187 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A dating website Where You can Reimagine love and Start finding the one for you"
+    />
+    <meta name="keywords" content="dating,datign website,find love,date" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <title>Flitty | Filter Dating</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Hero section -->
+      <div class="hero-section">
+        <header>
+          <div class="logo">
+            <img src="img/logo.png" alt="flitty" />
+          </div>
+          <div class="hamburger" onclick="mobMenu()" id="toggleBar">
+            <div class="line1-hm" id="toggleBar1"></div>
+            <div class="line2-hm" id="toggleBar2"></div>
+            <div class="line3-hm" id="toggleBar3"></div>
+          </div>
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-item"><a href="">Products</a></li>
+              <li class="nav-item"><a href="">News</a></li>
+              <li class="nav-item"><a href="">About Us</a></li>
+              <li class="nav-item"><a href="">Support</a></li>
+              <li class="nav-item"><a href="">Download</a></li>
+            </ul>
+          </nav>
+
+        </header>
+        <div class="hero-heading">
+          <h1 class="hero-heading-title">
+            Exclusive filter dating<sup style="font-size: medium">TM</sup>
+          </h1>
+        </div>
+      </div>
+
+      <!-- Details section -->
+      <div class="details-section">
+        <div class="faqs">
+          <h1 class="faqs-title">FAQs</h1>
+          <p class="faqs-heading">
+            Everything you need to know about the product and billing.
+          </p>
+          <div class="faqs-accor">
+            <div class="accor-heading">
+              <p class="faqs-accor-heading">Is there a free trial available?</p>
+              <i class="fa-solid fa-circle-plus plus-icon"></i>
+              <i class="fa-solid fa-circle-minus minus-icon"></i>
+            </div>
+            <p class="faqs-accor-para">
+              Yes, you can try us for free for 30 days. If you want, we’ll
+              provide you with a free, personalized 30-minute onboarding call to
+              get you up and running as soon as possible.
+            </p>
+          </div>
+          <div class="faqs-accor">
+            <div class="accor-heading">
+              <p class="faqs-accor-heading">Can I change my plan later?</p>
+              <i onclick="openAccor()" class="fa-solid fa-circle-plus plus-icon"></i>
+              <i onclick="openAccor()" class="fa-solid fa-circle-minus minus-icon"></i>
+            </div>
+          </div>
+          <div class="faqs-accor">
+            <div class="accor-heading">
+              <p class="faqs-accor-heading">
+                What is your cancellation policy?
+              </p>
+              <i class="fa-solid fa-circle-plus plus-icon"></i>
+              <i class="fa-solid fa-circle-minus minus-icon"></i>
+            </div>
+          </div>
+          <div class="faqs-accor" style="border: none">
+            <div class="accor-heading">
+              <p class="faqs-accor-heading">Can I edit my profile later?</p>
+              <i class="fa-solid fa-circle-plus plus-icon"></i>
+              <i class="fa-solid fa-circle-minus minus-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <div class="details-img">
+            <img src="img/details-img.png" alt="img" />
+          </div>
+          <div>
+            <h3 class="details-heading">Most popular dating app in 2022</h3>
+            <p class="details-para">
+              Everything you need to know about this dating app.
+            </p>
+            <p class="details-link"><a href="">Read more</a></p>
+          </div>
+        </div>
+        <div class="reviews">
+          <div class="quote-review">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <p class="review-para">
+              <q>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+                velit et! Iure culpa illo quae. Lorem ipsum dolor sit, amet
+                consectetur
+              </q>
+            </p>
+            <p class="user-name">~ Tanishq Bhatt</p>
+          </div>
+          <div class="quote-review">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <p class="review-para">
+              <q>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+                velit et! Iure culpa illo quae. Lorem ipsum dolor sit, amet
+                consectetur
+              </q>
+            </p>
+            <p class="user-name">~ Hargun Kaur</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- App download section -->
+      <div class="app-download">
+        <h2 class="app-download-heading">GET THE APP</h2>
+        <a href="#">
+          <div class="app-storelogo">
+            <i class="fa-brands fa-apple" style="font-size: 32px"></i>
+            <div class="downloadInfo">
+              <p>DOWNLOAD ON</p>
+              <h6>App Store</h6>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="app-storelogo">
+            <i
+              class="fa-brands fa-google-play"
+              style="font-size: 26px; margin-top: 4px"
+            ></i>
+            <div class="downloadInfo">
+              <p>GET IT ON</p>
+              <h6>Google Play</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer-head">
+          <div class="header-logo">
+            <img src="img/logo.png" alt="logo" />
+          </div>
+          <nav>
+            <ul class="footer-nav-list">
+              <li><a href="">Cookies</a></li>
+              <li><a href="">Terms & Policy</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Security</a></li>
+            </ul>
+          </nav>
+          <div class="social-icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>© Copyright 2022, All Rights Reserved by Flitty</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
