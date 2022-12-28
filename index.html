@@ -33,16 +33,17 @@
             <div class="line2-hm" id="toggleBar2"></div>
             <div class="line3-hm" id="toggleBar3"></div>
           </div>
-          <nav>
-            <ul class="nav-list">
-              <li class="nav-item"><a href="">Products</a></li>
-              <li class="nav-item"><a href="">News</a></li>
-              <li class="nav-item"><a href="">About Us</a></li>
-              <li class="nav-item"><a href="">Support</a></li>
-              <li class="nav-item"><a href="">Download</a></li>
-            </ul>
+          <nav class="desktop-menu">
+            <div class="mobile-nav-overlay" id="toggleClass">
+              <ul class="nav-list" onclick="mobMenu()">
+                <li class="nav-item"><a href="">Products</a></li>
+                <li class="nav-item"><a href="">News</a></li>
+                <li class="nav-item"><a href="">About Us</a></li>
+                <li class="nav-item"><a href="">Support</a></li>
+                <li class="nav-item"><a href="">Download</a></li>
+              </ul>
+            </div>
           </nav>
-
         </header>
         <div class="hero-heading">
           <h1 class="hero-heading-title">
@@ -73,8 +74,14 @@
           <div class="faqs-accor">
             <div class="accor-heading">
               <p class="faqs-accor-heading">Can I change my plan later?</p>
-              <i onclick="openAccor()" class="fa-solid fa-circle-plus plus-icon"></i>
-              <i onclick="openAccor()" class="fa-solid fa-circle-minus minus-icon"></i>
+              <i
+                onclick="openAccor()"
+                class="fa-solid fa-circle-plus plus-icon"
+              ></i>
+              <i
+                onclick="openAccor()"
+                class="fa-solid fa-circle-minus minus-icon"
+              ></i>
             </div>
           </div>
           <div class="faqs-accor">
@@ -135,6 +142,7 @@
       <!-- App download section -->
       <div class="app-download">
         <h2 class="app-download-heading">GET THE APP</h2>
+        <div class="download-store">
         <a href="#">
           <div class="app-storelogo">
             <i class="fa-brands fa-apple" style="font-size: 32px"></i>
@@ -157,6 +165,7 @@
           </div>
         </a>
       </div>
+      </div>
 
       <!-- footer -->
       <footer>
@@ -164,7 +173,7 @@
           <div class="header-logo">
             <img src="img/logo.png" alt="logo" />
           </div>
-          <nav>
+          <nav class="footer-nav">
             <ul class="footer-nav-list">
               <li><a href="">Cookies</a></li>
               <li><a href="">Terms & Policy</a></li>
