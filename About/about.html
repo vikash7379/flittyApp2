@@ -10,50 +10,91 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="../style.css">
+    <script defer src="../script.js"></script>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="about-container">
+      <header>
+        <div class="logo">
+          <a href="/"><img src="../img/logo.png" alt="flitty" /></a>
+        </div>
+        <div class="hamburger" onclick="mobMenu()" id="toggleBar">
+          <div class="line1-hm" id="toggleBar1"></div>
+          <div class="line2-hm" id="toggleBar2"></div>
+          <div class="line3-hm" id="toggleBar3"></div>
+        </div>
+        <nav class="desktop-menu">
+          <div class="mobile-nav-overlay" id="toggleClass">
+            <ul class="nav-list" onclick="mobMenu()">
+              <li class="nav-item"><a href="">Products</a></li>
+              <li class="nav-item"><a href="../blog/index.html">Blogs</a></li>
+              <li class="nav-item"><a href="../About/about.html">About Us</a></li>
+              <li class="nav-item"><a href="../support/index.html">Support</a></li>
+              <li class="nav-item"><a href="">Download</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
       <div class="upper">
         <div class="upper-left">
-          <p>
-            Reimagine your Dating<br />life and start Finding<br />
+          <h1 class="ul-heading">
+            Reimagine your Dating life and start Finding 
             the One
-          </p>
+          </h1>
           <div class="upper-text">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
               porro, qui nam odio excepturi deleniti cupiditate non repellendus,
-              expedita laudantium aut sit beatae? Tempora recusandae quidem
-              facilis aut quos commodi.
+              expedita
             </p>
           </div>
 
-          <div class="social-icons-wrapper">
-            <p>Get it Now !</p>
-            <div class="social-icons">
-              <div>
-                <i class="bx bxl-apple"></i>
-                <div class="social-icon-text">
-                  <p>Download on the</p>
-                  <p class="bold">App Store</p>
+          <div class="download-wrapper">
+            <p class="dw-title">Get it Now !</p>
+            <div class="store-btn">
+            <a href="#">
+              <div class="app-storelogo">
+                <i class="fa-brands fa-apple" style="font-size: 32px"></i>
+                <div class="downloadInfo">
+                  <p>DOWNLOAD ON</p>
+                  <h6>App Store</h6>
                 </div>
               </div>
-              <div>
-                <i class="bx bxl-apple"></i>
-                <div class="social-icon-text">
-                  <p>Download on the</p>
-                  <p class="bold">Google Play</p>
+            </a>
+            <a href="#">
+              <div class="app-storelogo">
+                <i
+                  class="fa-brands fa-google-play"
+                  style="font-size: 26px; margin-top: 4px"
+                ></i>
+                <div class="downloadInfo">
+                  <p>GET IT ON</p>
+                  <h6>Google Play</h6>
                 </div>
               </div>
-            </div>
+            </a>
+          </div>
           </div>
         </div>
 
         <div class="upper-right">
-          <img src="../img/mobapp1.png" alt="" />
+          <picture class="ur-img">
+            <source media="(max-width:700px)" srcset="../img/Aboutpagemockup.png">
+            <img src="../img/mobapp1.png" alt="" />
+          </picture>
         </div>
       </div>
+<!-- ---------   2nd section ------------ -->
+
 
       <div class="lower">
         <div class="lower-1">
@@ -157,5 +198,28 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="footer-head">
+        <div class="header-logo">
+          <img src="../img/logo.png" alt="logo" />
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li><a href="">Cookies</a></li>
+            <li><a href="">Terms & Policy</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Security</a></li>
+          </ul>
+        </nav>
+        <div class="social-icons">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright 2022, All Rights Reserved by Flitty</p>
+      </div>
+    </footer>
   </body>
 </html>
