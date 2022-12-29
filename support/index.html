@@ -5,9 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="support-container">
+      <header>
+        <div class="logo">
+          <a href="../index.html"><img src="../img/logo.png" alt="flitty" /></a>
+        </div>
+        <div class="hamburger" onclick="mobMenu()" id="toggleBar">
+          <div class="line1-hm" id="toggleBar1"></div>
+          <div class="line2-hm" id="toggleBar2"></div>
+          <div class="line3-hm" id="toggleBar3"></div>
+        </div>
+        <nav class="desktop-menu">
+          <div class="mobile-nav-overlay" id="toggleClass">
+            <ul class="nav-list" onclick="mobMenu()">
+              <li class="nav-item"><a href="">Products</a></li>
+              <li class="nav-item"><a href="../blog/index.html">Blogs</a></li>
+              <li class="nav-item"><a href="../About/about.html">About Us</a></li>
+              <li class="nav-item"><a href="index.html">Support</a></li>
+              <li class="nav-item"><a href="">Download</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
       <div class="support-wrapper">
         <div class="supp-img">
           <img src="../img/Group 39924.png" alt="" />
@@ -52,5 +81,28 @@
         </form>
       </div>
     </div>
+    <footer>
+      <div class="footer-head">
+        <div class="header-logo">
+          <img src="../img/logo.png" alt="logo" />
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li><a href="">Cookies</a></li>
+            <li><a href="">Terms & Policy</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Security</a></li>
+          </ul>
+        </nav>
+        <div class="social-icons">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright 2022, All Rights Reserved by Flitty</p>
+      </div>
+    </footer>
   </body>
 </html>

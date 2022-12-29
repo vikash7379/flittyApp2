@@ -55,6 +55,8 @@ header {
 }
 .logo {
   width: 8rem;
+  height: 3rem;
+  cursor: pointer;
 }
 .logo img {
   width: 100%;
@@ -193,7 +195,16 @@ header {
 }
 .faqs-accor {
   border-bottom: 2px solid rgba(150, 205, 105);
+  cursor: pointer;
 }
+.faqs-accor-para{
+  display: none;
+}
+
+.activeAccor .faqs-accor-para{
+  display: block;
+}
+
 .plus-icon,
 .minus-icon {
   color: goldenrod;
@@ -204,9 +215,10 @@ header {
   justify-content: space-between;
   margin-block: 1rem;
 }
-.plus-icon {
+/* .plus-icon {
   display: none;
-}
+} */
+
 .faqs-accor-para {
   opacity: 0.7;
   font-size: 14px;
@@ -375,6 +387,16 @@ header {
   .faqs-accor-para {
     font-size: 14px;
   }
+}
+@media(max-width : 360px){
+  .faqs,
+.details,
+.reviews{
+  min-width: 200px;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
 }
 
 /* ----------- App download --------- */

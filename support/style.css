@@ -45,12 +45,14 @@ textarea:focus, input:focus, select:focus{
     margin: 2rem auto;
 }
 .support-wrapper{
+    margin-top: 6rem;
+    margin-bottom:4rem;
     display: flex;
 }
 
 .supp-img{
     width: 60%;
-    height: 40rem;
+    height: 38rem;
     min-width: 380px;
 
 }
