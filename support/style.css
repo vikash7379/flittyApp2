@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* --------  webkit ------- */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ------- Globle css ----------*/
+body {
+  font-family: "trebuchet MS", sans-serif;
+  color: white;
+  overflow-x: hidden;
+  background-color: #191919;
+}
+.supp-form input ,textarea{
+    background-color: #191919;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius:6px;
+    padding:10px 1rem;
+    width: 100%;
+    color: white;
+    /* border-style: none; */
+}
+textarea:focus, input:focus, select:focus{
+    outline: none;
+}
+.supp-form label ,.name-inp div label{
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+    margin-top: 1.5rem;
+}
+
+/* ------- support container --------- */
+
+.support-container{
+    width: 90vw;
+    margin: 2rem auto;
+}
+.support-wrapper{
+    display: flex;
+}
+
+.supp-img{
+    width: 60%;
+    height: 40rem;
+    min-width: 380px;
+
+}
+.supp-img img{
+    width: 100%;
+    height: 100%;
+}
+.supp-form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4rem;
+}
+.form-title{
+    color: goldenrod;
+    font-size: 14px;
+}
+.form-heading{
+    font-size: 28px;
+    margin:1rem 0;
+}
+.form-para{
+    opacity: 0.7;
+    margin-bottom: 1.4rem;
+}
+
+.name-inp{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.tnc-checkbox{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.phone-inp{
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    display: flex;
+}
+.phone-inp select{
+    border: none;
+    border-radius: 5px;
+    background-color: inherit;
+    color: white;
+    opacity: 0.7;
+    padding-inline: 1rem 0;
+    font-size: 16px;
+    background-color:#191919;
+}
+.phone-inp input{
+    border: none;
+}
+
+.tnc-checkbox input{
+    width: initial;
+    margin-right: 1rem;
+}
+.tnc-checkbox label{
+    margin-bottom: 24px;
+}
+a{
+    color: white;
+}
+.sub-btn{
+    background-color: #F3BB11;
+    padding: 14px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+@media(max-width:1024px){
+    .supp-form{
+        padding-inline: 2rem 0rem ;
+    }
+}
+
+@media(max-width : 840px){
+    .name-inp{
+        flex-direction: column;
+    }
+    .supp-img{
+        min-width:320px;
+        height: 45rem;
+    }
+}
+
+@media(max-width : 680px){
+    .supp-img{
+        display: none;
+    }
+    .supp-form{
+        width: 100%;
+        padding-inline: 2rem;
+    }
+    .name-inp{
+        flex-direction: row;
+    }
+}
+@media(max-width : 420px){
+
+ .supp-form{
+        width: 100%;
+        padding-inline: 0rem;
+    }
+    .name-inp{
+        flex-direction: column;
+    }
+}
