@@ -24,27 +24,32 @@ function mobMenu() {
   container.classList.toggle("fixedBgMob");
 }
 
-
-
 for (let i = 0; i < accor.length; i++) {
   closeIcon[i].style.display = "none";
+  if (accor[i].classList.contains("activeAccor")) {
+    openIcon[i].style.display = "none"
+    closeIcon[i].style.display = "block";
+  }
 
   accor[i].addEventListener("click", () => {
-
-    const res = accor[i].classList.toggle("activeAccor");
-
-
-    if(res){
-        openIcon[i].style.display = "none";
-        closeIcon[i].style.display = "block";
-    }
-    else{
-        openIcon[i].style.display = "block";
-        closeIcon[i].style.display = "none";
+    for (let j = 0; j < accor.length; j++) {
+      if (i == j) {
+        var res = accor[i].classList.toggle("activeAccor");
+      } else {
+        accor[j].classList.remove("activeAccor");
+      }
+      if (accor[j].classList.contains("activeAccor")) {
+        openIcon[j].style.display = "none"
+        closeIcon[j].style.display = "block";
+      }
+      else{
+        openIcon[j].style.display = "block";
+        closeIcon[j].style.display = "none";
+      }
     }
   });
-}
 
+}
 
 // var selector = '.faqs-accor';
 

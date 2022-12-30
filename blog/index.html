@@ -16,28 +16,28 @@
     <script defer src="../script.js"></script>
   </head>
   <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html"><img src="../img/logo.png" alt="flitty" /></a>
+      </div>
+      <div class="hamburger" onclick="mobMenu()" id="toggleBar">
+        <div class="line1-hm" id="toggleBar1"></div>
+        <div class="line2-hm" id="toggleBar2"></div>
+        <div class="line3-hm" id="toggleBar3"></div>
+      </div>
+      <nav class="desktop-menu">
+        <div class="mobile-nav-overlay" id="toggleClass">
+          <ul class="nav-list" onclick="mobMenu()">
+            <li class="nav-item"><a href="/"><i class="fa-solid fa-box-open nav-mob-icon"></i>Products</a></li>
+            <li class="nav-item"><a href="index.html"><i class="fa-regular fa-comment-dots nav-mob-icon"></i>Blogs</a></li>
+            <li class="nav-item"><a href="../About/about.html"><i class="fa-solid fa-circle-exclamation nav-mob-icon"></i>About Us</a></li>
+            <li class="nav-item"><a href="../support/index.html"><i class="fa-solid fa-headset nav-mob-icon"></i>Support</a></li>
+            <li class="nav-item"><a href="/"><i class="fa-solid fa-download nav-mob-icon"></i>Download</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="blog-container">
-      <header>
-        <div class="logo">
-          <a href="../index.html"><img src="../img/logo.png" alt="flitty" /></a>
-        </div>
-        <div class="hamburger" onclick="mobMenu()" id="toggleBar">
-          <div class="line1-hm" id="toggleBar1"></div>
-          <div class="line2-hm" id="toggleBar2"></div>
-          <div class="line3-hm" id="toggleBar3"></div>
-        </div>
-        <nav class="desktop-menu">
-          <div class="mobile-nav-overlay" id="toggleClass">
-            <ul class="nav-list" onclick="mobMenu()">
-              <li class="nav-item"><a href="">Products</a></li>
-              <li class="nav-item"><a href="index.html">Blogs</a></li>
-              <li class="nav-item"><a href="../About/about.html">About Us</a></li>
-              <li class="nav-item"><a href="../support/index.html">Support</a></li>
-              <li class="nav-item"><a href="">Download</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
       <div class="blog-first-sec">
         <h1 class="bf-heading">Read latest collection</h1>
         <p class="bf-para">
@@ -58,6 +58,7 @@
           <div class="recent-blog">
             <div class="rb-wrapper">
               <h4 class="rb-title">Recent Posts</h4>
+              <div class="rb-mobile">
               <div class="recent-post-item">
                 <div class="recent-img">
                   <img src="../img/Image1.png" alt="img" />
@@ -90,6 +91,7 @@
                   How to start dating and lorem ipsum constejuh touplk
                 </p>
               </div>
+            </div>
             </div>
           </div>
         </div>

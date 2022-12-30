@@ -45,7 +45,7 @@ textarea:focus, input:focus, select:focus{
     margin: 2rem auto;
 }
 .support-wrapper{
-    margin-top: 6rem;
+    margin-top: 2rem;
     margin-bottom:4rem;
     display: flex;
 }

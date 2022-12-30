@@ -17,6 +17,13 @@ body {
   font-family: "trebuchet MS", sans-serif;
   color: white;
   overflow-x: hidden;
+
+}
+@media(min-width : 1500px){
+  body{
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 }
 li {
   list-style: none;
@@ -36,7 +43,6 @@ a {
 .hero-section {
   width: 100%;
   height: 100vh;
-  position: relative;
   background-image: url("img/bgImg.jpg");
   background-size: cover;
   overflow-x: hidden;
@@ -47,11 +53,6 @@ header {
   display: flex;
   align-items: center;
   height: 5rem;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 5;
 }
 .logo {
   width: 8rem;
@@ -80,6 +81,9 @@ header {
 .hamburger {
   display: none;
 }
+.nav-mob-icon{
+  display: none;
+}
 
 @media (max-width: 760px) {
   header {
@@ -93,6 +97,11 @@ header {
     height: 2px;
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
+  }
+  .nav-mob-icon{
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
   }
   .hamburger {
     margin-left: auto;
@@ -119,7 +128,7 @@ header {
     z-index: 50;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 6rem 0 0 4rem;
+    padding: 6rem 0 0 3rem;
     gap: 3rem;
     font-size: 20px;
     transition: all 0.7s ease-in-out;
@@ -199,6 +208,7 @@ header {
 }
 .faqs-accor-para{
   display: none;
+  /* transition: all 0.5s ease; */
 }
 
 .activeAccor .faqs-accor-para{
@@ -207,7 +217,8 @@ header {
 
 .plus-icon,
 .minus-icon {
-  color: goldenrod;
+  color: gold;
+  font-size: 19px;
   cursor: pointer;
 }
 .accor-heading {
@@ -215,9 +226,6 @@ header {
   justify-content: space-between;
   margin-block: 1rem;
 }
-/* .plus-icon {
-  display: none;
-} */
 
 .faqs-accor-para {
   opacity: 0.7;
