@@ -105,7 +105,6 @@
   text-align: center;
 }
 .lower-2 > h1 {
-  /* color:white; */
   margin-bottom: 20px;
   font-size: 2.5rem;
 }
@@ -205,9 +204,10 @@
 }
 @media(max-width:650px){
     .ul-heading{
-        font-size:1.5rem;
+        font-size:2rem;
         font-weight: 500;
-        width: 16rem;
+        /* width: 16rem; */
+        width: 100%;
     }
     .upper-left{
         padding: 0;
@@ -215,7 +215,7 @@
     }
     .ur-img img{
         width: 100%;
-        scale: 1.2;
+        /* scale: 1.2; */
     }
     .upper-text p{
         display: -webkit-box;
@@ -250,7 +250,6 @@
     .ul-heading{
         font-size: 22px;
         line-height: 26px;
-        /* width: 12rem; */
     }
     .dw-title{
         font-size: 17px;
