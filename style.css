@@ -17,12 +17,12 @@ body {
   font-family: "trebuchet MS", sans-serif;
   color: white;
   overflow-x: hidden;
-
+  background-color: #1e1e1e;
 }
 @media(min-width : 1500px){
   body{
-    max-width: 1500px;
-    margin: 0 auto;
+    /* max-width: 1500px; */
+    /* margin: 0 auto; */
   }
 }
 li {
@@ -39,6 +39,12 @@ a {
 .container {
   width: 100vw;
   height: 100%;
+}
+@media (min-width : 1500px) {
+  .container{
+    /* width: 1500px; */
+    /* margin: 0 auto; */
+  }
 }
 .hero-section {
   width: 100%;
@@ -177,6 +183,8 @@ header {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
   gap: 1rem;
   padding: 5rem 7rem;
   background-color: #1e1e1e;
@@ -416,6 +424,8 @@ header {
   justify-content: start;
   align-items: center;
   padding: 0rem 8rem 4rem;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 .app-download-heading {
   font-weight: 400;

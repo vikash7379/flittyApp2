@@ -26,7 +26,6 @@ body {
     padding:10px 1rem;
     width: 100%;
     color: white;
-    /* border-style: none; */
 }
 textarea:focus, input:focus, select:focus{
     outline: none;
@@ -42,6 +41,7 @@ textarea:focus, input:focus, select:focus{
 
 .support-container{
     width: 90vw;
+    max-width: 1500px;
     margin: 2rem auto;
     min-height: calc(100vh - 23rem);
 }
@@ -84,6 +84,7 @@ textarea:focus, input:focus, select:focus{
     display: flex;
     gap: 1rem;
     justify-content: space-between;
+
 }
 
 .tnc-checkbox{
