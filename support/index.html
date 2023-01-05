@@ -16,74 +16,97 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" />
     <script defer src="../script.js"></script>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href="../index.html"><img src="../img/logo.png" alt="flitty" /></a>
-      </div>
-      <div class="hamburger" onclick="mobMenu()" id="toggleBar">
-        <div class="line1-hm" id="toggleBar1"></div>
-        <div class="line2-hm" id="toggleBar2"></div>
-        <div class="line3-hm" id="toggleBar3"></div>
-      </div>
-      <nav class="desktop-menu">
-        <div class="mobile-nav-overlay" id="toggleClass">
-          <ul class="nav-list" onclick="mobMenu()">
-            <li class="nav-item"><a href="/"><i class="fa-solid fa-box-open nav-mob-icon"></i>Products</a></li>
-            <li class="nav-item"><a href="../blog/index.html"><i class="fa-regular fa-comment-dots nav-mob-icon"></i>Blogs</a></li>
-            <li class="nav-item"><a href="../About/about.html"><i class="fa-solid fa-circle-exclamation nav-mob-icon"></i>About Us</a></li>
-            <li class="nav-item"><a href="index.html"><i class="fa-solid fa-headset nav-mob-icon"></i>Support</a></li>
-            <li class="nav-item"><a href="/"><i class="fa-solid fa-download nav-mob-icon"></i>Download</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
     <div class="support-container">
-      <div class="support-wrapper">
-        <div class="supp-img">
-          <img src="../img/Group 39924.png" alt="" />
+      <header>
+        <div class="logo">
+          <a href="../index.html"><img src="../img/logo.png" alt="flitty" /></a>
         </div>
-        <form action="" class="supp-form">
-          <p class="form-title">Contact us</p>
-          <h5 class="form-heading">Get in touch</h5>
-          <p class="form-para">
-            We'd love to hear from you. Please fill out this form.
+        <div class="hamburger" onclick="mobMenu()" id="toggleBar">
+          <div class="line1-hm" id="toggleBar1"></div>
+          <div class="line2-hm" id="toggleBar2"></div>
+          <div class="line3-hm" id="toggleBar3"></div>
+        </div>
+        <nav class="desktop-menu">
+          <div class="mobile-nav-overlay" id="toggleClass">
+            <ul class="nav-list" onclick="mobMenu()">
+              <li class="nav-item">
+                <a href="/"
+                  ><i class="fa-solid fa-box-open nav-mob-icon"></i>Products</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="../blog/index.html"
+                  ><i class="fa-regular fa-comment-dots nav-mob-icon"></i>Blogs</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="../About/about.html"
+                  ><i class="fa-solid fa-circle-exclamation nav-mob-icon"></i
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="index.html"
+                  ><i class="fa-solid fa-headset nav-mob-icon"></i>Support</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/"
+                  ><i class="fa-solid fa-download nav-mob-icon"></i>Download</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="support-wrapper">
+        <div class="left-section-contact">
+          <h1 class="lsc-heading">Contact Us</h1>
+          <p class="lsc-para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Reprehenderit debitis quidem Reprehenderit debitis explicabo nihil
+            molestiae praesentium.
           </p>
-          <div class="name-inp">
-            <div>
-              <label for="fname">First name</label>
-              <input type="text" placeholder="First name" style="margin-top: 5px;"/>
-            </div>
-            <div>
-              <label for="lname">Last name</label>
-              <input type="text" placeholder="Last name" name="" id="" style="margin-top: 5px;"/>
-            </div>
-          </div>
-          <label for="email1">Email</label>
-          <input type="email" name="" id="email1" placeholder="you@company.com" />
-          <label for="phone">Phone number</label>
-          <div class="phone-inp">
-            <select id="phone" name="phone">
-                <option value="india">IN</option>
-                <option value="us">US</option>
-                <option value="europe">EU</option>
-                <option value="pak">PK</option>
-              </select>
-          <input type="text" name="" id="phone" placeholder="+91-000-000-0000"/>
-          </div>
-          <label for="msg">Message</label>
-          <textarea name="" id="msg" cols="30" rows="5"></textarea>
-          <div class="tnc-checkbox">
-            <input type="checkbox" name="tnc" id="tnc" value="tnc" />
-            <label for="tnc"
-              >You agree to our friendly <a href="">privacy policy.</a></label
-            >
-          </div>
+
+        </div>
+        <div class="supp-form">
+          <form action="" class="form-wrapper">
+          <label for="name">Your Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter you full name">
+          <label for="email">Email address</label>
+          <input type="text" name="email" id="email" placeholder="Enter your email">
+          <label for="issue">Choose your issue</label>
+          <select name="issue" id="issue">
+            <option value="">Select your problem</option>
+            <option value="1">one</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+          </select>
           <button class="sub-btn">Send message</button>
         </form>
+        </div>
+        <div class="cont-grid">
+          <div>
+            <h5 class="cg-heading">HELP CENTER</h5>
+            <p class="cg-para">Lorem ipsum dolor sit amet dnfknn Lorem, ipsum dolor..</p>
+          </div>
+          <div>
+            <h5 class="cg-heading">PRESS INQUIRES</h5>
+            <p class="cg-para">Lorem ipsum dolor sit amet dnfknn Lorem, ipsum dolor..</p>
+          </div>
+          <div>
+            <h5 class="cg-heading">ADVERTISING INQUIRES</h5>
+            <p class="cg-para">Lorem ipsum dolor sit amet dnfknn Lorem, ipsum dolor..</p>
+          </div>
+          <div>
+            <h5 class="cg-heading">GET IN TOUCH</h5>
+            <p class="cg-para">+1-246-888-0653 </br> +1-222-632-0194</p>
+          </div>
+        </div>
       </div>
     </div>
     <footer>

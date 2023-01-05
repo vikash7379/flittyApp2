@@ -14,17 +14,16 @@ html {
 
 /* ------- Globle css ----------*/
 body {
-  font-family: "trebuchet MS", sans-serif;
+  font-family: 'DM Serif Text', serif;
   color: white;
   overflow-x: hidden;
   background-color: #1e1e1e;
 }
-@media(min-width : 1500px){
-  body{
-    /* max-width: 1500px; */
-    /* margin: 0 auto; */
-  }
+p{
+  font-family: 'DM Sans', sans-serif;
+
 }
+
 li {
   list-style: none;
   color: inherit;

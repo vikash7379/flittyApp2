@@ -14,6 +14,7 @@ let lines = document.querySelector("#toggleBar");
 let closeIcon = document.getElementsByClassName("closeIcon");
 let openIcon = document.getElementsByClassName("openIcon");
 let accor = document.getElementsByClassName("faqs-accor");
+let phone = document.getElementById("phone");
 
 function mobMenu() {
   tc.classList.toggle("dispNav");
@@ -51,17 +52,12 @@ for (let i = 0; i < accor.length; i++) {
 
 }
 
-// var selector = '.faqs-accor';
+phone.addEventListener("click",function(){
+  alert("d")
+  txt = this.value;
+  if (txt.length == 3 ||txt.length == 7 || txt.length == 12 ){
+    this.value = this.value+" ";
+  }
+})
 
-// $(selector).on('click', function(){
-//     $(selector).removeClass('activeAccor');
-//     $(this).addClass('activeAccor');
-//     if( $(".openIcon").css("display") == "none" ){
-//         $(".openIcon").css("display","block")
-//     }
-//     else( $(".openIcon").css("display","none"))
-//     if( $(".closeIcon").css("display") == "block" ){
-//         $(".closeIcon").css("display","none")
-//     }
-//     else( $(".closeIcon").css("display","block"))
-// });
+document.getElementsByClassName("sub-btn").addEventListener("")
