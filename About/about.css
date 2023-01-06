@@ -1,4 +1,3 @@
-
 .about-container {
   width: 100vw;
   margin: 0 auto;
@@ -6,41 +5,111 @@
 }
 /* ---------------------------- */
 
-.about-hero-wrapper{
-  width: 90%;
-  padding:6rem 0;
-  margin: 0 auto;
+.abt-main {
+  width: 100%;
+  margin: 5rem auto 0;
+  padding-bottom: 10rem;
   display: flex;
+  background-color: #1a1717;
 }
-.ahw-desc{
+.abt-main-desc {
+  width: 60%;
+}
+.abt-desc-childone {
+  padding-top: 2rem;
+  padding-left: 10%;
+  background-color: black;
+}
+.abt-title {
+  margin-bottom: 1rem;
+  color: goldenrod;
+  font-size: 17px;
+}
+.abt-heading {
+  margin-bottom: 40px;
+}
+.abt-para {
+  width: 85%;
+  font-size: 15px;
+  letter-spacing: 0.9px;
+  line-height: 21px;
+  padding-bottom: 4rem;
+}
+.abt-highlight {
+  background-color: white;
+  color: black;
+  height: 6rem;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 24px;
+}
+.abt-desc-childtwo {
+  padding-left: 10%;
+  padding-top: 5rem;
+}
+.abt-img {
   width: 50%;
+  max-height: 50rem;
+}
+.abt-img img {
+  width: 100%;
+  height: 100%;
 }
 
+/* ------- About second description */
 
-
-.about-img{
-  width: 50%;
-}
-.abt-img{
-
+.abt-main-second {
+  flex-direction: row-reverse;
+  margin: 0;
 }
 
+/* ----- how its works ------- */
 
+.how-its-works {
+  padding: 6rem 6rem;
+}
+.hiw-heading {
+  font-size: 44px;
+}
+.hiw-desc {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  padding-top: 24px;
+  border-top: 1px solid goldenrod;
+  position: relative;
+}
+.hiw-desc-heading {
+  font-size: 16px;
+}
+.hiw-desc-para {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.9px;
+  margin-top: 1.2rem;
+}
+.hiw-desc-dot {
+  width: 10px;
+  height: 10px;
+  background-color: gold;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+}
 
+/* <!-- security privacy support --> */
 
-/* --------------------------- */
-
-.lower {
+.sps-section {
   background-color: #0e0705;
   padding: 4rem 5rem;
 }
-.lower-1 {
+.sps-main {
   display: flex;
   width: 100%;
+  gap: 3rem;
+  margin-block: 4rem 3rem;
 }
-.lower-section-part {
-    padding: 10px 30px;
-  }
+
 .yellow-dot {
   background-color: goldenrod;
   border-radius: 50%;
@@ -52,6 +121,7 @@
 .border {
   border-left: 1px solid white;
   border-right: 1px solid white;
+  padding-inline: 2rem;
 }
 .lower-section-heading {
   display: flex;
@@ -70,29 +140,21 @@
   line-height: 20px;
 }
 
-
 .image-text-left > p {
   text-align: left;
   color: white;
 }
 
-
-
-
-@media(max-width:940px){
-
-    .lower{
-        padding-inline: 0;
-    }
-
+@media (max-width: 940px) {
+  .lower {
+    padding-inline: 0;
+  }
 }
 
-@media(max-width:650px){
-    .lower-1{
-        flex-direction: column;
-        padding-inline:1.5rem;
-        gap: 2rem;
-    }
+@media (max-width: 650px) {
+  .lower-1 {
+    flex-direction: column;
+    padding-inline: 1.5rem;
+    gap: 2rem;
+  }
 }
-
-
