@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flitty | Support</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css">
+    <script defer src="../script.js"></script>
+  </head>
+  <body>
+
+    <div class="support-container">
+        <header>
+            <div class="logo">
+              <a href="../index.html"><img src="../img/logo.png" alt="flitty" /></a>
+            </div>
+            <div class="hamburger" onclick="mobMenu()" id="toggleBar">
+              <div class="line1-hm" id="toggleBar1"></div>
+              <div class="line2-hm" id="toggleBar2"></div>
+              <div class="line3-hm" id="toggleBar3"></div>
+            </div>
+            <nav class="desktop-menu">
+              <div class="mobile-nav-overlay" id="toggleClass">
+                <ul class="nav-list" onclick="mobMenu()">
+                  <li class="nav-item"><a href="/"><i class="fa-solid fa-box-open nav-mob-icon"></i>Products</a></li>
+                  <li class="nav-item"><a href="../blog/index.html"><i class="fa-regular fa-comment-dots nav-mob-icon"></i>Blogs</a></li>
+                  <li class="nav-item"><a href="../About/about.html"><i class="fa-solid fa-circle-exclamation nav-mob-icon"></i>About Us</a></li>
+                  <li class="nav-item"><a href="index.html"><i class="fa-solid fa-headset nav-mob-icon"></i>Support</a></li>
+                  <li class="nav-item"><a href="/"><i class="fa-solid fa-download nav-mob-icon"></i>Download</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+      <div class="support-wrapper">
+        <form action="" class="supp-form">
+          <p class="form-title">Report Abuse</p>
+          <h5 class="form-heading">Let us help you</h5>
+          <p class="form-para">
+            We'd love to hear from you. Please fill out this form.
+          </p>
+          <label for="name">Your Name</label>
+          <input type="text" name="" id="name" placeholder="Your name">
+          <label for="email1">Email</label>
+          <input type="email" name="" id="email1" placeholder="you@company.com" />
+          <label for="phone">Phone number</label>
+          <div class="phone-inp">
+            <select id="phone" name="phone">
+                <option value="india">IN</option>
+                <option value="us">US</option>
+                <option value="europe">EU</option>
+                <option value="pak">PK</option>
+              </select>
+          <input type="text" name="" id="phone" placeholder="+91-000-000-0000"/>
+          </div>
+          <label for="msg">Message</label>
+          <textarea name="" id="msg" cols="30" rows="5"></textarea>
+          <div class="tnc-checkbox">
+            <input type="checkbox" name="tnc" id="tnc" value="tnc" />
+            <label for="tnc"
+              >You agree to our friendly <a href="">privacy policy.</a></label
+            >
+          </div>
+          <button class="sub-btn">Send message</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-head">
+        <div class="header-logo">
+          <img src="../img/logo.png" alt="logo" />
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li><a href="">Cookies</a></li>
+            <li><a href="">Terms & Policy</a></li>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Security</a></li>
+          </ul>
+        </nav>
+        <div class="social-icons">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright 2022, All Rights Reserved by Flitty</p>
+      </div>
+    </footer>
+  </body>
+</html>

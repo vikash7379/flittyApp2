@@ -1,61 +1,28 @@
 
 .about-container {
   width: 100vw;
-  /* max-width: 1500px; */
   margin: 0 auto;
   background-color: black;
 }
+/* ---------------------------- */
 
-.upper {
-  display:flex;
-  background-color: black;
+.about-hero-wrapper{
   width: 90%;
-  margin:0 auto;
-  padding: 2rem 2rem 0;
-  max-height: 840px;
-  height: 90vh;
+  padding:6rem 0;
+  margin: 0 auto;
+  display: flex;
 }
-.upper-left {
-  height: 100%;
-  width: 60%;
-  margin-top: 4rem;
-}
-.ul-heading{
-  font-size: 3rem;
-  font-weight: 550;
-  width: 34rem;
-}
-
-.upper-text > p {
-  margin: 2rem 0;
-  opacity: 0.7;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 0.9px;
-  max-width: 90%;
-}
-
-.upper-right {
+.ahw-desc{
   width: 50%;
-  height: 100%;
-  overflow: hidden;
 }
-.ur-img img {
-  height: 100%;
-  scale: 1.1;
-  margin-left: 5rem;
-  text-align: end;
+
+
+
+.about-img{
+  width: 50%;
 }
-.download-wrapper {
-  margin-top: 50px;
-}
-.dw-title{
-  font-weight: 500;
-  font-size: 22px;
-}
-.store-btn{
-    display: flex;
-    gap: 2rem;
+.abt-img{
+
 }
 
 
@@ -102,59 +69,7 @@
   opacity: 0.7;
   line-height: 20px;
 }
-.lower-2 {
-  margin-top: 100px;
-  text-align: center;
-}
-.lower-2 > h1 {
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-}
-.lower-2 > p {
-  margin: 2rem 0 4rem;
-  opacity: 0.7;
-}
-.lower-images {
-  display: flex;
-  max-width: 70%;
-  gap: 2rem;
-  justify-content: space-between;
-  margin: auto;
-  padding-bottom: 20px;
-  /* padding: 20px; */
-}
-.lower-images > div {
-  height: 350px;
-  width: 250px;
-  position: relative;
-  background-position: center;
-}
-.lower-images > div > img {
-  height: inherit;
-  width: inherit;
-  border-radius: 5px;
-  background-position: center;
-}
-.image-text {
-  background: transparent;
-  backdrop-filter: saturate(10%) blur(5px);
-  width: 100%;
-  position: absolute;
-  bottom: 10%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-}
-.play-pause {
-  border: 2px solid white;
-  height: 100%;
-  border-radius: 10px;
-}
-.play-pause > i {
-  font-size: 2.5rem;
-  color: white;
-}
+
 
 .image-text-left > p {
   text-align: left;
@@ -162,140 +77,21 @@
 }
 
 
-.reviews-btn {
-  background-color: white;
-  color: #2563eb;
-  border-radius: 20px;
-  cursor: pointer;
-  outline: none;
-  padding: 8px 30px;
-  font-size: 1.2rem;
-  margin-top: 30px;
-  margin-bottom: 3rem;
-}
 
-@media(max-width:1200px){
-    .upper-right img{
-        width: 100%;
-        margin: 0;
-    }
-    .ul-heading{
-        font-size: 2.5rem;
-        width: 28rem;
-    }
-    .lower-images{
-      max-width: 90%;
-    }
-    .lower-images >div{
-      height: 230px;
-      width: 180px;
-    }
-}
+
 @media(max-width:940px){
-    .upper{
-        padding-inline: 0;
-    }
+
     .lower{
         padding-inline: 0;
     }
-    .lower-images{
-        max-width: 95%;
-    }
 
-    .lower-images > div{
-        width: 100%;
-        height: 320px;
-    }
 }
-@media(max-width:870px){
-    .ul-heading{
-        font-size: 2rem;
-        width: 22rem;
-    }
-}
+
 @media(max-width:650px){
-    .ul-heading{
-        font-size:2rem;
-        font-weight: 500;
-        /* width: 16rem; */
-        width: 100%;
-    }
-    .upper-left{
-        padding: 0;
-        margin-top: 0;
-    }
-    .ur-img img{
-        width: 100%;
-        /* scale: 1.2; */
-    }
-    .lower-images{
-      gap: 1rem;
-    }
-    .upper-text p{
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        overflow: hidden;
-    }
-    .store-btn{
-        flex-direction: column;
-        gap: 0;
-        margin-top: 1.5rem;
-    }
     .lower-1{
         flex-direction: column;
         padding-inline:1.5rem;
         gap: 2rem;
-    }
-}
-
-@media(max-width : 500px){
-    .upper-left{
-        width: 100%;
-    }
-    .upper-text p{
-        margin-top:14px;
-        margin-bottom: 80px;
-        font-size: 13px;
-    }
-    .download-wrapper{
-        margin-top: 1rem;
-    }
-    .ul-heading{
-        font-size: 22px;
-        line-height: 26px;
-    }
-    .dw-title{
-        font-size: 17px;
-        margin-bottom: 0;
-    }
-    .lower-2 h1{
-        font-size: 26px;
-        padding:  1rem;
-    }
-    .lower-2 p{
-        font-size: 14px;
-        padding-inline: 1rem;
-    }
-
-}
-@media(max-width:420px){
-    .lower-images{
-        flex-direction: column;
-        width: 90%;
-        gap: 2rem;
-    }
-    .reviews-btn{
-        font-size: 14px;
-    }
-}
-@media(max-width:300px){
-    .lower-section-part{
-        padding: 0;
-        border: none;
-    }
-    .reviews-btn{
-      padding: 10px 15px;
     }
 }
 

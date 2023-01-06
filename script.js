@@ -53,7 +53,6 @@ for (let i = 0; i < accor.length; i++) {
 }
 
 phone.addEventListener("click",function(){
-  alert("d")
   txt = this.value;
   if (txt.length == 3 ||txt.length == 7 || txt.length == 12 ){
     this.value = this.value+" ";
