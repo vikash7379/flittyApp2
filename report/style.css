@@ -1,6 +1,6 @@
 /* ------- Globle css ----------*/
 
-.supp-form input,
+.report-form input,
 textarea {
   border: 2px solid rgba(255, 255, 255, 0.4);
   border-radius: 6px;
@@ -12,8 +12,7 @@ input:focus,
 select:focus {
   outline: none;
 }
-.supp-form label,
-.name-inp div label {
+.report-form label {
   font-size: 14px;
   opacity: 0.8;
   margin-bottom: 5px;
@@ -22,37 +21,36 @@ select:focus {
 
 /* ------- support container --------- */
 
-.support-container {
+.report-container {
   max-width: 1500px;
   width: 100vw;
   min-height: calc(100vh - 14rem);
   background-color: #261f1f;
 }
-.support-wrapper {
+.report-wrapper {
   max-width: 30rem;
   margin: 2rem auto 0rem;
 }
 
-.supp-form {
+.report-form {
   display: flex;
   flex-direction: column;
 }
-.form-title {
+.report-title {
   color: goldenrod;
   font-size: 14px;
   text-align: center;
 }
-.form-heading {
+.report-heading {
   font-size: 28px;
   margin: 1rem 0;
   text-align: center;
 }
-.form-para {
+.report-para {
   text-align: center;
   opacity: 0.7;
   margin-bottom: 1.4rem;
 }
-
 
 .tnc-checkbox {
   margin: 1.5rem 0;
@@ -81,7 +79,7 @@ select:focus {
   color: white;
   text-decoration: underline !important;
 }
-.sub-btn {
+.report-btn {
   background-color: #f3bb11;
   padding: 14px 0;
   cursor: pointer;
@@ -90,8 +88,8 @@ select:focus {
   margin-bottom: 4rem;
 }
 
-@media(max-width : 500px){
-    .support-wrapper{
-        padding: 0 1rem;
-    }
+@media (max-width: 500px) {
+  .support-wrapper {
+    padding: 0 1rem;
+  }
 }
