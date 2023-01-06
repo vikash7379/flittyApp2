@@ -7,8 +7,8 @@ const sendEmail=async(options)=>{
         port:465,
         service:'gmail',
         auth:{
-            user:'Enter Id',
-            pass:'Enter pass',
+            user:'rajatverma@freeskout.com',
+            pass:'ltndotqafppatzdc',
         },
         secure:true
     })
