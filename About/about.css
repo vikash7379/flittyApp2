@@ -7,7 +7,7 @@
 
 .abt-main {
   width: 100%;
-  margin: 5rem auto 0;
+  margin: 3rem auto 0;
   padding-bottom: 10rem;
   display: flex;
   background-color: #1a1717;
@@ -32,8 +32,9 @@
   width: 85%;
   font-size: 15px;
   letter-spacing: 0.9px;
-  line-height: 21px;
+  line-height: 23px;
   padding-bottom: 4rem;
+  opacity: 0.8;
 }
 .abt-highlight {
   background-color: white;
@@ -56,11 +57,59 @@
   height: 100%;
 }
 
-/* ------- About second description */
 
 .abt-main-second {
   flex-direction: row-reverse;
   margin: 0;
+}
+
+
+@media(max-width : 1024px){
+  .abt-img{
+    max-height: 100%;
+  }
+}
+@media(max-width : 760px){
+  .abt-main{
+    padding-bottom: 2rem;
+    flex-direction: column-reverse;
+  }
+  .abt-main-desc{
+    width: 100%;
+  }
+  .abt-img{
+    background-color: black;
+    width: 100%;
+    padding: 0 4rem;
+  }
+  .abt-second-img{
+    padding-top: 2rem;
+  }
+  .abt-img img{
+    border-radius: 10px;
+  }
+}
+@media(max-width : 560px){
+  .abt-img{
+    padding: 0 2rem;
+  }
+  .abt-desc-childone,.abt-desc-childtwo{
+    padding-inline: 2rem;
+  }
+  .abt-para{
+    width: 100%;
+  }
+  .abt-second-img{
+    padding-top: 2rem !important;
+  }
+}
+@media(max-width:300px){
+  .abt-desc-childone,.abt-desc-childtwo{
+    padding-inline: 1rem;
+  }
+  .abt-img{
+    padding: 0 1rem;
+  }
 }
 
 /* ----- how its works ------- */
@@ -77,6 +126,8 @@
   gap: 2rem;
   padding-top: 24px;
   border-top: 1px solid goldenrod;
+}
+.hiw-desc-child{
   position: relative;
 }
 .hiw-desc-heading {
@@ -87,6 +138,7 @@
   line-height: 22px;
   letter-spacing: 0.9px;
   margin-top: 1.2rem;
+  opacity: 0.8;
 }
 .hiw-desc-dot {
   width: 10px;
@@ -94,7 +146,7 @@
   background-color: gold;
   border-radius: 50%;
   position: absolute;
-  top: -5px;
+  top: -30px;
 }
 
 /* <!-- security privacy support --> */
@@ -136,7 +188,7 @@
   font-size: 1rem;
   word-spacing: 2px;
   font-size: 14px;
-  opacity: 0.7;
+  opacity: 0.8;
   line-height: 20px;
 }
 
@@ -145,16 +197,68 @@
   color: white;
 }
 
-@media (max-width: 940px) {
-  .lower {
-    padding-inline: 0;
+@media (max-width: 960px) {
+  .how-its-works{
+    padding: 2rem;
+  }
+  .sps-section{
+    padding: 4rem 2rem;
   }
 }
 
-@media (max-width: 650px) {
-  .lower-1 {
+@media (max-width : 800px){
+  .hiw-desc{
+    gap: 1rem;
+  }
+  .sps-main{
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .hiw-desc{
     flex-direction: column;
-    padding-inline: 1.5rem;
+    border-top: none;
+    border-left: 2px solid goldenrod;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+  .hiw-desc-child{
+    padding-left: 40px;
+  }
+  .hiw-desc-dot{
+    top: 0px;
+    left: -6px;
+  }
+  .sps-main {
+    flex-direction: column;
+    padding-inline: 0rem;
     gap: 2rem;
   }
+  .border{
+    border: none;
+    padding:0 ;
+  }
+}
+
+@media(max-width:400px){
+  .abt-heading{
+    font-size: 24px;
+  }
+  .hiw-desc-child{
+    padding-left: 25px;
+  }
+}
+
+@media(max-width : 300px){
+  .abt-heading{
+    font-size: 22px;
+  }
+  .how-its-works{
+    padding:2rem 1rem;
+  }
+  .sps-section{
+    padding: 3rem 1rem;
+  }
+
 }

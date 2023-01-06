@@ -72,9 +72,7 @@ select:focus {
   width: initial;
   margin-right: 0.7rem;
 }
-.tnc-checkbox label {
-  margin-bottom: 24px;
-}
+
 .tnc-checkbox label a {
   color: white;
   text-decoration: underline !important;
