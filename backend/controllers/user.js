@@ -11,6 +11,7 @@ exports.reportAbuse=async(req,res,next)=>{
 
   return res.status(200).json({
     success:true,
+    name,
     message:"report registered"
   })
 }
@@ -20,6 +21,7 @@ exports.contact=async(req,res,next)=>{
   console.log(req.body);
   await sendEmail({
     email:email,
+    name ,
     subject:"complain",
     message:issue
   })

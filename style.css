@@ -14,19 +14,19 @@ html {
 
 /* ------- Globle css ----------*/
 body {
-  font-family: 'DM Serif Text', serif;
+  /* font-family: 'DM Serif Text', serif; */
   color: white;
   overflow-x: hidden;
   background-color: #1e1e1e;
 }
 p{
   font-family: 'DM Sans', sans-serif;
-
 }
 
 li {
   list-style: none;
   color: inherit;
+  letter-spacing: 1px;
 }
 
 a {
@@ -39,12 +39,7 @@ a {
   width: 100vw;
   height: 100%;
 }
-@media (min-width : 1500px) {
-  .container{
-    /* width: 1500px; */
-    /* margin: 0 auto; */
-  }
-}
+
 .hero-section {
   width: 100%;
   height: 100vh;
