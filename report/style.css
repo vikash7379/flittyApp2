@@ -25,7 +25,7 @@ select:focus {
   max-width: 1500px;
   width: 100vw;
   min-height: calc(100vh - 14rem);
-  background-color: #261f1f;
+  background-color: #120909;
 }
 .report-wrapper {
   max-width: 30rem;
@@ -87,7 +87,7 @@ select:focus {
 }
 
 @media (max-width: 500px) {
-  .support-wrapper {
+  .report-wrapper {
     padding: 0 1rem;
   }
 }

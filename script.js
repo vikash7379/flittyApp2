@@ -28,7 +28,7 @@ function mobMenu() {
 for (let i = 0; i < accor.length; i++) {
   closeIcon[i].style.display = "none";
   if (accor[i].classList.contains("activeAccor")) {
-    openIcon[i].style.display = "none"
+    openIcon[i].style.display = "none";
     closeIcon[i].style.display = "block";
   }
 
@@ -40,23 +40,19 @@ for (let i = 0; i < accor.length; i++) {
         accor[j].classList.remove("activeAccor");
       }
       if (accor[j].classList.contains("activeAccor")) {
-        openIcon[j].style.display = "none"
+        openIcon[j].style.display = "none";
         closeIcon[j].style.display = "block";
-      }
-      else{
+      } else {
         openIcon[j].style.display = "block";
         closeIcon[j].style.display = "none";
       }
     }
   });
-
 }
 
-phone.addEventListener("click",function(){
+phone.addEventListener("click", function () {
   txt = this.value;
-  if (txt.length == 3 ||txt.length == 7 || txt.length == 12 ){
-    this.value = this.value+" ";
+  if (txt.length == 3 || txt.length == 7 || txt.length == 12) {
+    this.value = this.value + " ";
   }
-})
-
-document.getElementsByClassName("sub-btn").addEventListener("")
+});

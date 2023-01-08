@@ -1,41 +1,10 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-}
-/* --------  webkit ------- */
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-/* ------- Globle css ----------*/
-body {
-  /* font-family: "trebuchet MS", sans-serif; */
-  color: white;
-  background-color: #161616;
-  overflow-x: hidden;
-}
-li {
-  list-style: none;
-  color: inherit;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-img {
-  height: 100%;
-  width: 100%;
-}
-
 /*---------- first section -------- */
+.blog-container{
+  width: 100vw;
+  background-color: #0e0705;
+}
 
-.blog-container {
+.blog-wrapper {
   width: 90%;
   margin: 0 auto;
 }
@@ -105,6 +74,10 @@ img {
   height: 4rem;
   margin-right: 1rem;
 }
+.recent-img img{
+  width: 100%;
+  height: 100%;
+}
 .recent-post-para {
   margin-left: 1rem;
 }
@@ -117,7 +90,7 @@ img {
 }
 
 @media (max-width: 920px) {
-  .blog-container {
+  .blog-wrapper {
     width: 95%;
   }
   .rb-wrapper {
@@ -215,7 +188,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 .blog-latest-brief {
   height: 9rem;

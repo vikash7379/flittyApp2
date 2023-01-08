@@ -4,7 +4,7 @@
 .support-container{
     width: 100vw;
     min-height: calc(100vh - 14.3rem);
-    background-color: #1E1711;
+    background-color: #120909;
 }
 .support-wrapper{
     width: 85%;
@@ -173,3 +173,15 @@
     }
 }
 
+
+
+/* testing */
+
+.report-nav-btn{
+    margin-left: auto;
+    background-color: rgb(193, 35, 35);
+    padding: 10px 2rem;
+    font-size: 17px;
+    color: white;
+    border-radius: 10px;
+}

@@ -21,7 +21,7 @@ exports.contact=async(req,res,next)=>{
   console.log(req.body);
   await sendEmail({
     email:email,
-    name ,
+    name,
     subject:"complain",
     message:issue
   })

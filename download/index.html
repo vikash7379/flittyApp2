@@ -1,0 +1,125 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flitty | Download</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script defer src="../script.js"></script>
+  </head>
+  <body>
+    <div class="download-container">
+      <!-- header -->
+      <header>
+        <div class="logo">
+          <a href="../index.html"><img src="../img/logo.png" alt="flitty" /></a>
+        </div>
+        <div class="hamburger" onclick="mobMenu()" id="toggleBar">
+          <div class="line1-hm" id="toggleBar1"></div>
+          <div class="line2-hm" id="toggleBar2"></div>
+          <div class="line3-hm" id="toggleBar3"></div>
+        </div>
+        <nav class="desktop-menu">
+          <div class="mobile-nav-overlay" id="toggleClass">
+            <ul class="nav-list" onclick="mobMenu()">
+              <li class="nav-item">
+                <a href="/blog/index.html"><i class="fa-regular fa-comment-dots nav-mob-icon"></i>Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../About/about.html"><i class="fa-solid fa-circle-exclamation nav-mob-icon"></i>About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="../support/index.html"><i class="fa-solid fa-headset nav-mob-icon"></i>Support</a>
+              </li>
+              <li class="nav-item">
+                <a href="index.html"><i class="fa-solid fa-download nav-mob-icon"></i>Download</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- download main section -->
+      <div class="download-main">
+        <div class="dm-left">
+          <h1 class="dm-heading">
+            Reimagine your Dating life and start Finding the One
+          </h1>
+            <p class="dm-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              porro, qui nam odio excepturi deleniti cupiditate non repellendus,
+              expedita
+            </p>
+         <div class="download-wrapper">
+            <p class="dw-title">Get it Now !</p>
+            <div class="store-btn">
+              <a href="#">
+                <div class="dw-storelogo">
+                  <i class="fa-brands fa-apple" style="font-size: 32px"></i>
+                  <div class="dw-Info">
+                    <p>DOWNLOAD ON</p>
+                    <h6>App Store</h6>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="dw-storelogo">
+                  <i
+                    class="fa-brands fa-google-play"
+                    style="font-size: 26px; margin-top: 4px"
+                  ></i>
+                  <div class="dw-Info">
+                    <p>GET IT ON</p>
+                    <h6>Google Play</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile right main image -->
+        <div class="download-right">
+          <picture class="dr-img">
+            <source
+              media="(max-width:750px)"
+              srcset="../img/Aboutpagemockup.png"
+            />
+            <img src="../img/mobapp1.png" alt="" />
+          </picture>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer>
+        <div class="footer-head">
+          <div class="header-logo">
+            <img src="../img/logo.png" alt="logo" />
+          </div>
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li><a href="">Cookies</a></li>
+              <li><a href="">Terms & Policy</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Security</a></li>
+            </ul>
+          </nav>
+          <div class="social-icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>© Copyright 2022, All Rights Reserved by Flitty</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

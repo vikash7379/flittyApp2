@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flitty | Report</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -21,6 +22,7 @@
   </head>
   <body>
     <div class="report-container">
+      <!-- header -->
       <header>
         <div class="logo">
           <a href="../index.html"><img src="../img/logo.png" alt="flitty" /></a>
@@ -33,11 +35,6 @@
         <nav class="desktop-menu">
           <div class="mobile-nav-overlay" id="toggleClass">
             <ul class="nav-list" onclick="mobMenu()">
-              <li class="nav-item">
-                <a href="/"
-                  ><i class="fa-solid fa-box-open nav-mob-icon"></i>Products</a
-                >
-              </li>
               <li class="nav-item">
                 <a href="../blog/index.html"
                   ><i class="fa-regular fa-comment-dots nav-mob-icon"></i
@@ -56,7 +53,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a href="/"
+                <a href="/download/index.html"
                   ><i class="fa-solid fa-download nav-mob-icon"></i>Download</a
                 >
               </li>
@@ -64,6 +61,7 @@
           </div>
         </nav>
       </header>
+      <!-- report wrapper main -->
       <div class="report-wrapper">
         <form
           action="http://localhost:8000/reportAbuse"
@@ -111,6 +109,7 @@
         </form>
       </div>
     </div>
+    <!-- footer  -->
     <footer>
       <div class="footer-head">
         <div class="header-logo">
