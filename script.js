@@ -15,6 +15,10 @@ let closeIcon = document.getElementsByClassName("closeIcon");
 let openIcon = document.getElementsByClassName("openIcon");
 let accor = document.getElementsByClassName("faqs-accor");
 let phone = document.getElementById("phone");
+let faqsDetails = document.getElementById("faqsDetails");
+let faqsReadmoreP = document.getElementById("faqsReadmoreP");
+
+
 
 function mobMenu() {
   tc.classList.toggle("dispNav");
@@ -24,6 +28,8 @@ function mobMenu() {
   line3.classList.toggle("line3-click");
   container.classList.toggle("fixedBgMob");
 }
+
+// Accor home page
 
 for (let i = 0; i < accor.length; i++) {
   closeIcon[i].style.display = "none";
@@ -50,9 +56,28 @@ for (let i = 0; i < accor.length; i++) {
   });
 }
 
+//  phone
+
 phone.addEventListener("click", function () {
   txt = this.value;
   if (txt.length == 3 || txt.length == 7 || txt.length == 12) {
     this.value = this.value + " ";
   }
 });
+
+
+// faqs read more onclick
+
+
+function faqsReadMore() {
+  faqsDetails.classList.toggle("faqs-onclick")
+  // faqsDetails.style.color = "red"
+  // faqsReadmoreP.innerHTML.toggle ="less more"
+
+  if (faqsReadmoreP.innerHTML === "Read more") {
+    faqsReadmoreP.innerHTML = "Less more";
+  } else {
+    faqsReadmoreP.innerHTML = "Read more";
+  }
+
+}

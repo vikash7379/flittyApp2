@@ -6,10 +6,11 @@
 
 .blog-wrapper {
   width: 90%;
-  margin: 0 auto;
+  margin: 0rem auto;
 }
 .blog-first-sec {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  padding-top: 5rem;
 }
 .bf-heading {
   font-weight: 400;

@@ -15,13 +15,26 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Darker+Grotesque:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Text&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Text&display=swap" rel="stylesheet"> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <title>Flitty | Filter Dating</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
 
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
@@ -30,36 +43,63 @@
     <div class="container">
       <!-- Hero section -->
       <div class="hero-section">
-        <header>
-          <div class="logo">
-            <a href="/"><img src="img/logo.png" alt="flitty" /></a>
-          </div>
-          <div class="hamburger" onclick="mobMenu()" id="toggleBar">
-            <div class="line1-hm" id="toggleBar1"></div>
-            <div class="line2-hm" id="toggleBar2"></div>
-            <div class="line3-hm" id="toggleBar3"></div>
-          </div>
-          <nav class="desktop-menu">
-            <div class="mobile-nav-overlay" id="toggleClass">
-              <ul class="nav-list" onclick="mobMenu()" >
-                <li class="nav-item"><a href="blog/index.html"><i class="fa-regular fa-comment-dots nav-mob-icon"></i>Blogs</a></li>
-                <li class="nav-item"><a href="About/about.html"><i class="fa-solid fa-circle-exclamation nav-mob-icon"></i>About Us</a></li>
-                <li class="nav-item"><a href="support/index.html"><i class="fa-solid fa-headset nav-mob-icon"></i>Support</a></li>
-                <li class="nav-item"><a href="download/index.html"><i class="fa-solid fa-download nav-mob-icon"></i>Download</a></li>
-              </ul>
+        <div class="testing-wrapper">
+          <header>
+            <div class="logo">
+              <a href="/"><img src="img/logo2.png" alt="flitty" /></a>
             </div>
-          </nav>
-        </header>
-        <div class="hero-heading">
-          <h1 class="hero-heading-title">
-            Exclusive filter dating<sup style="font-size: medium">TM</sup>
-          </h1>
+            <div class="hamburger" onclick="mobMenu()" id="toggleBar">
+              <div class="line1-hm" id="toggleBar1"></div>
+              <div class="line2-hm" id="toggleBar2"></div>
+              <div class="line3-hm" id="toggleBar3"></div>
+            </div>
+            <nav class="desktop-menu">
+              <div class="mobile-nav-overlay" id="toggleClass">
+                <ul class="nav-list" onclick="mobMenu()">
+                  <li class="nav-item">
+                    <a href="blog/index.html"
+                      ><i class="fa-regular fa-comment-dots nav-mob-icon"></i
+                      >Blogs</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="About/about.html"
+                      ><i
+                        class="fa-solid fa-circle-exclamation nav-mob-icon"
+                      ></i
+                      >About Us</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="support/index.html"
+                      ><i class="fa-solid fa-headset nav-mob-icon"></i
+                      >Support</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="download/index.html"
+                      ><i class="fa-solid fa-download nav-mob-icon"></i
+                      >Download</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          <div class="hero-heading">
+            <h1 class="hero-heading-title">
+              Exclusive <br />
+              filtered dating<sup class="sup-tm">TM</sup>
+            </h1>
+          </div>
+          <button class="home-download-btn">Download</button>
+
         </div>
       </div>
 
       <!-- Details section -->
       <div class="details-section">
-        <div class="faqs">
+        <div class="faqs " id="faqsDetails">
           <h1 class="faqs-title">FAQs</h1>
           <p class="faqs-heading">
             Everything you need to know about the product and billing.
@@ -67,8 +107,8 @@
           <div class="faqs-accor activeAccor">
             <div class="accor-heading">
               <p class="faqs-accor-heading">Is there a free trial available?</p>
-              <i class='bx bx-plus-circle plus-icon openIcon '></i>
-              <i class='bx bx-minus-circle  minus-icon closeIcon '></i>
+              <i class="bx bx-plus-circle plus-icon openIcon"></i>
+              <i class="bx bx-minus-circle minus-icon closeIcon"></i>
             </div>
             <p class="faqs-accor-para">
               Yes, you can try us for free for 30 days. If you want, we’ll
@@ -79,8 +119,8 @@
           <div class="faqs-accor">
             <div class="accor-heading">
               <p class="faqs-accor-heading">Can I change my plan later?</p>
-              <i class='bx bx-plus-circle plus-icon openIcon '></i>
-              <i class='bx bx-minus-circle  minus-icon closeIcon '></i>
+              <i class="bx bx-plus-circle plus-icon openIcon"></i>
+              <i class="bx bx-minus-circle minus-icon closeIcon"></i>
             </div>
             <p class="faqs-accor-para">
               Yes, you can try us for free for 30 days. If you want, we’ll
@@ -93,8 +133,8 @@
               <p class="faqs-accor-heading">
                 What is your cancellation policy?
               </p>
-              <i class='bx bx-plus-circle plus-icon openIcon '></i>
-              <i class='bx bx-minus-circle  minus-icon closeIcon '></i>
+              <i class="bx bx-plus-circle plus-icon openIcon"></i>
+              <i class="bx bx-minus-circle minus-icon closeIcon"></i>
             </div>
             <p class="faqs-accor-para">
               Yes, you can try us for free for 30 days. If you want, we’ll
@@ -105,8 +145,8 @@
           <div class="faqs-accor" style="border: none">
             <div class="accor-heading">
               <p class="faqs-accor-heading">Can I edit my profile later?</p>
-              <i class='bx bx-plus-circle plus-icon openIcon '></i>
-              <i class='bx bx-minus-circle  minus-icon closeIcon '></i>
+              <i class="bx bx-plus-circle plus-icon openIcon"></i>
+              <i class="bx bx-minus-circle minus-icon closeIcon"></i>
             </div>
             <p class="faqs-accor-para">
               Yes, you can try us for free for 30 days. If you want, we’ll
@@ -114,6 +154,7 @@
               get you up and running as soon as possible.
             </p>
           </div>
+          <p class="details-link " onclick="faqsReadMore()" id="faqsReadmoreP">Read more</p>
         </div>
         <div class="details">
           <div class="details-img">
@@ -124,9 +165,11 @@
             <p class="details-para">
               Everything you need to know about this dating app.
             </p>
-            <p class="details-link"><a href="">Read more</a></p>
+            <p class="details-link"><a href="/blog/details.html">Read more</a></p>
           </div>
         </div>
+
+        <!-- reviews -->
         <div class="reviews">
           <div class="quote-review">
             <i class="fa-solid fa-quote-left quote-icon"></i>
@@ -150,42 +193,44 @@
             </p>
             <p class="user-name">~ Hargun Kaur</p>
           </div>
+          <p class="details-link"><a href="">Read more</a></p>
+
         </div>
       </div>
 
       <!-- App download section -->
       <div class="app-download">
-        <h2 class="app-download-heading">GET THE APP</h2>
+        <h2 class="app-download-heading">Get The App</h2>
         <div class="download-store">
-        <a href="#">
-          <div class="app-storelogo">
-            <i class="fa-brands fa-apple" style="font-size: 32px"></i>
-            <div class="downloadInfo">
-              <p>DOWNLOAD ON</p>
-              <h6>App Store</h6>
+          <a href="#">
+            <div class="app-storelogo">
+              <i class="fa-brands fa-apple" style="font-size: 32px;margin-top: 4px;"></i>
+              <div class="downloadInfo">
+                <p>DOWNLOAD ON</p>
+                <h6>App Store</h6>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="app-storelogo">
-            <i
-              class="fa-brands fa-google-play"
-              style="font-size: 26px; margin-top: 4px"
-            ></i>
-            <div class="downloadInfo">
-              <p>GET IT ON</p>
-              <h6>Google Play</h6>
+          </a>
+          <a href="#">
+            <div class="app-storelogo">
+              <i
+                class="fa-brands fa-google-play"
+                style="font-size: 26px; margin-top: 6px"
+              ></i>
+              <div class="downloadInfo">
+                <p>GET IT ON</p>
+                <h6>Google Play</h6>
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
       </div>
 
       <!-- footer -->
       <footer>
         <div class="footer-head">
-          <div class="header-logo">
-            <img src="img/logo.png" alt="logo" />
+          <div class="footer-logo">
+            <img src="img/logo2.png" alt="logo" />
           </div>
           <nav class="footer-nav">
             <ul class="footer-nav-list">
@@ -206,6 +251,11 @@
         </div>
       </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
