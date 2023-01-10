@@ -12,7 +12,7 @@ p{
 .abt-main {
   width: 100%;
   /* padding: 30rem auto 0; */
-  padding-bottom: 10rem;
+  padding-bottom: 2rem;
   display: flex;
   padding-top: 5rem;
 
@@ -69,6 +69,7 @@ p{
 .abt-main-second {
   flex-direction: row-reverse;
   margin: 0;
+  padding-bottom: 7rem;
 }
 
 
@@ -81,6 +82,9 @@ p{
   .abt-main{
     padding-bottom: 2rem;
     flex-direction: column-reverse;
+  }
+  .abt-main-second{
+    padding-top: 0px;
   }
   .abt-main-desc{
     width: 100%;
@@ -236,7 +240,7 @@ p{
   .hiw-desc-child{
     padding-left: 40px;
     width: 100%;
-    
+
   }
   .hiw-desc-dot{
     top: 0px;
