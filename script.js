@@ -17,8 +17,7 @@ let accor = document.getElementsByClassName("faqs-accor");
 let phone = document.getElementById("phone");
 let faqsDetails = document.getElementById("faqsDetails");
 let faqsReadmoreP = document.getElementById("faqsReadmoreP");
-const navbar = document.getElementById('navbar');
-
+const navbar = document.getElementById("navbar");
 
 function mobMenu() {
   tc.classList.toggle("dispNav");
@@ -26,7 +25,7 @@ function mobMenu() {
   line1.classList.toggle("line1-click");
   line2.classList.toggle("line2-click");
   line3.classList.toggle("line3-click");
-  container.classList.toggle("fixedBgMob");
+  // container.classList.toggle("fixedBgMob");
 }
 
 // Accor home page
@@ -66,13 +65,14 @@ for (let i = 0; i < accor.length; i++) {
 // });
 
 
-// faqs read more onclick
+
+
+// // faqs read more onclick
+
 
 
 function faqsReadMore() {
-  faqsDetails.classList.toggle("faqs-onclick")
-  // faqsDetails.style.color = "red"
-  // faqsReadmoreP.innerHTML.toggle ="less more"
+  faqsDetails.classList.toggle("faqs-onclick");
 
   if (faqsReadmoreP.innerHTML === "Read more") {
     faqsReadmoreP.innerHTML = "Less more";
@@ -81,16 +81,14 @@ function faqsReadMore() {
   }
 }
 
-
 // navbar scroll background change
 
 window.onscroll = function () {
-  if (document.body.scrollTop >= 100 ) {
-      navbar.classList.add("navbar-scrolled");
-      // navbar.classList.remove("nav-transparent");
-  }
-  else {
-      // navbar.classList.add("nav-transparent");
-      navbar.classList.remove("navbar-scrolled");
+  if (document.body.scrollTop >= 70) {
+    navbar.classList.add("navbar-scrolled");
+    // navbar.classList.remove("nav-transparent");
+  } else {
+    // navbar.classList.add("nav-transparent");
+    navbar.classList.remove("navbar-scrolled");
   }
 };
