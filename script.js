@@ -17,7 +17,7 @@ let accor = document.getElementsByClassName("faqs-accor");
 let phone = document.getElementById("phone");
 let faqsDetails = document.getElementById("faqsDetails");
 let faqsReadmoreP = document.getElementById("faqsReadmoreP");
-
+const navbar = document.getElementById('navbar');
 
 
 function mobMenu() {
@@ -58,12 +58,12 @@ for (let i = 0; i < accor.length; i++) {
 
 //  phone
 
-phone.addEventListener("click", function () {
-  txt = this.value;
-  if (txt.length == 3 || txt.length == 7 || txt.length == 12) {
-    this.value = this.value + " ";
-  }
-});
+// phone.addEventListener("click", function () {
+//   txt = this.value;
+//   if (txt.length == 3 || txt.length == 7 || txt.length == 12) {
+//     this.value = this.value + " ";
+//   }
+// });
 
 
 // faqs read more onclick
@@ -79,5 +79,18 @@ function faqsReadMore() {
   } else {
     faqsReadmoreP.innerHTML = "Read more";
   }
-
 }
+
+
+// navbar scroll background change
+
+window.onscroll = function () {
+  if (document.body.scrollTop >= 100 ) {
+      navbar.classList.add("navbar-scrolled");
+      // navbar.classList.remove("nav-transparent");
+  }
+  else {
+      // navbar.classList.add("nav-transparent");
+      navbar.classList.remove("navbar-scrolled");
+  }
+};

@@ -153,11 +153,11 @@
         font-size: 14px;
     }
     .form-wrapper{
-        margin:1.5rem 0 0;
+        margin:4rem 0 0;
         padding: 1rem 1rem;
     }
     .left-section-contact{
-        margin-top: 0;
+        /* margin-top: 0; */
     }
 
 }

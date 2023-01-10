@@ -100,7 +100,7 @@ p{
 }
 @media(max-width : 560px){
   .abt-img{
-    padding: 0 2rem;
+    padding: 24px 2rem 0 ;
   }
   .abt-desc-childone,.abt-desc-childtwo{
     padding-inline: 2rem;
@@ -138,6 +138,7 @@ p{
 }
 .hiw-desc-child{
   position: relative;
+  width: 25%;
 }
 .hiw-desc-heading {
   font-size: 16px;
@@ -234,6 +235,8 @@ p{
   }
   .hiw-desc-child{
     padding-left: 40px;
+    width: 100%;
+    
   }
   .hiw-desc-dot{
     top: 0px;

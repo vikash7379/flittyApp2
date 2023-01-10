@@ -8,9 +8,9 @@
   display: flex;
   width: 90%;
   margin: 0 auto;
-  padding: 2rem 2rem 0;
+  padding: 6rem 2rem 0;
   background-color: #120909;
-  min-height: calc(100vh - 19.4rem);
+  min-height: calc(100vh - 16.4rem);
 }
 .dm-left {
   height: 100%;
@@ -140,7 +140,7 @@
   .download-main {
     flex-direction: column;
     width: 100%;
-    padding: 0 1.5rem;
+    padding-inline: 1.5rem;
   }
   .store-btn {
     flex-direction: row;
@@ -184,5 +184,11 @@
     min-width: 15rem;
     max-width: 18rem;
     padding: 1rem 3rem;
+  }
+}
+
+@media(max-width : 320px){
+  .dm-heading{
+    font-size: 1.5rem;
   }
 }
