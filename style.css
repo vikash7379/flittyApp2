@@ -20,8 +20,7 @@ body {
   font-family: "DM Serif Display", serif;
 }
 p {
-  /* font-family: 'DM Sans', sans-serif; */
-  /* color: red; */
+
   font-family: "Darker Grotesque", sans-serif;
 }
 
@@ -298,9 +297,7 @@ header {
   padding: 5rem 5rem;
   background-color: #1e1e1e;
   position: relative;
-
-  /* overflow: hidden; */
-  /* height: 70%; */
+  /* min-height: 100vh; */
 }
 .faqs,
 .details,
@@ -313,9 +310,19 @@ header {
   padding: 1rem 2rem;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 0px 8px 2px;
   position: relative;
-  /* display: none; */
+}
+
+.reviews-FaqsClick{
+  display: none;
+}
+.details-FaqsClick {
+  display: none;
+}
+.details-section-Faqs-click{
+  height: 40rem;
 }
 .faqs-onclick {
+  /* height: 30rem !important; */
   position: absolute;
   left: 0;
   right: 0;
@@ -331,7 +338,7 @@ header {
 }
 .faqs-wrapper {
   overflow: scroll;
-  height: 70%;
+  height:70%;
 }
 .reviews-wrapper {
   height: 98%;
@@ -495,6 +502,10 @@ header {
   }
 }
 @media (max-width: 770px) {
+  .details-section-Faqs-click{
+    height: 50rem;
+    overflow: hidden;
+  }
   .details-section {
     padding-inline: 5rem;
   }

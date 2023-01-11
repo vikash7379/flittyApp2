@@ -18,6 +18,12 @@ let phone = document.getElementById("phone");
 let faqsDetails = document.getElementById("faqsDetails");
 let faqsReadmoreP = document.getElementById("faqsReadmoreP");
 const navbar = document.getElementById("navbar");
+let heroDetails = document.getElementById("heroDetails");
+let heroReviews = document.getElementById("heroReviews");
+let detailsCard = document.getElementById("detailsCard");
+
+
+
 
 function mobMenu() {
   tc.classList.toggle("dispNav");
@@ -67,9 +73,8 @@ for (let i = 0; i < accor.length; i++) {
 
 
 
-// // faqs read more onclick
 
-
+// faqs read more onclick
 
 function faqsReadMore() {
   faqsDetails.classList.toggle("faqs-onclick");
@@ -77,6 +82,12 @@ function faqsReadMore() {
   // let text = faqsReadmoreP;
   // text = text.replace(/(\r\n|\n|\r)/gm,"");
 
+  heroDetails.classList.toggle("details-FaqsClick")
+  heroReviews.classList.toggle("reviews-FaqsClick")
+  detailsCard.classList.toggle("details-section-Faqs-click")
+
+  document.body.scrollTop =680;
+  // document.documentElement.scrollTop = 0;
   if (faqsReadmoreP.innerHTML === "Read more") {
     faqsReadmoreP.innerHTML = "Less more";
   } else {
