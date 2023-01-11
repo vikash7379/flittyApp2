@@ -21,6 +21,8 @@ const navbar = document.getElementById("navbar");
 let heroDetails = document.getElementById("heroDetails");
 let heroReviews = document.getElementById("heroReviews");
 let detailsCard = document.getElementById("detailsCard");
+let faqsWrap = document.getElementById("faqsWrap");
+
 
 
 
@@ -79,8 +81,13 @@ for (let i = 0; i < accor.length; i++) {
 function faqsReadMore() {
   faqsDetails.classList.toggle("faqs-onclick");
 
-  // let text = faqsReadmoreP;
-  // text = text.replace(/(\r\n|\n|\r)/gm,"");
+  // faqsWrap.style.height = "80%"
+
+  if (faqsWrap.style.height === "75%") {
+    faqsWrap.style.height = "70%";
+  } else {
+    faqsWrap.style.height = "75%";
+  }
 
   heroDetails.classList.toggle("details-FaqsClick")
   heroReviews.classList.toggle("reviews-FaqsClick")
@@ -100,9 +107,7 @@ function faqsReadMore() {
 window.onscroll = function () {
   if (document.body.scrollTop >= 70) {
     navbar.classList.add("navbar-scrolled");
-    // navbar.classList.remove("nav-transparent");
   } else {
-    // navbar.classList.add("nav-transparent");
     navbar.classList.remove("navbar-scrolled");
   }
 };
