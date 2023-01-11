@@ -74,6 +74,9 @@ for (let i = 0; i < accor.length; i++) {
 function faqsReadMore() {
   faqsDetails.classList.toggle("faqs-onclick");
 
+  // let text = faqsReadmoreP;
+  // text = text.replace(/(\r\n|\n|\r)/gm,"");
+
   if (faqsReadmoreP.innerHTML === "Read more") {
     faqsReadmoreP.innerHTML = "Less more";
   } else {

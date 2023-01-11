@@ -63,14 +63,14 @@
 .form-wrapper label{
     margin-block: 18px 12px;
 }
-.form-wrapper input , .form-wrapper select{
+.form-wrapper input , .form-wrapper select, .form-wrapper textarea{
     border: 2px solid rgba(0,0,0, 0.6);
     border-radius:6px;
     padding:10px 1rem;
     width: 100%;
 }
 .sub-btn{
-    margin-top: 5rem;
+    margin-top: 2rem;
     background-color: goldenrod;
     border: none;
     color: white;

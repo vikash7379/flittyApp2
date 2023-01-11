@@ -4,7 +4,7 @@
 }
 
 .bd-wrapper{
-    padding-top: 2rem;
+    padding-top: 6rem;
     width: 90%;
     margin: 0 auto;
 }
@@ -51,10 +51,11 @@
     color: goldenrod;
 }
 .bd-blogs-para{
-    opacity: 0.8;
+    opacity: 0.65;
     font-size: 15px;
-    letter-spacing: 0.9px;
-    line-height: 22px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    word-spacing: 1px;
 }
 
 /* ---------------------- */

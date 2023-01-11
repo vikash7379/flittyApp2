@@ -135,6 +135,9 @@ header {
 .navbar-scrolled {
   /* background-color: rgba(100, 100, 111, 1); */
   background-color: #1a1717;
+  /* background-color: #434242; */
+
+  /* background-color: ; */
 }
 
 @media (max-width: 900px) {
@@ -295,6 +298,9 @@ header {
   padding: 5rem 5rem;
   background-color: #1e1e1e;
   position: relative;
+
+  /* overflow: hidden; */
+  /* height: 70%; */
 }
 .faqs,
 .details,
@@ -307,6 +313,7 @@ header {
   padding: 1rem 2rem;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 0px 8px 2px;
   position: relative;
+  /* display: none; */
 }
 .faqs-onclick {
   position: absolute;
