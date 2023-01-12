@@ -25,10 +25,14 @@
 .bd-banner-date{
     color: goldenrod;
     font-size: 20px;
+  text-shadow: black 2px 2px 10px;
+
 }
 .bd-banner-heading{
     margin-top: 10px;
     font-size: 28px;
+  text-shadow: black 2px 2px 10px;
+
 }
 
 /* ------------------------ */
@@ -76,6 +80,11 @@
 }
 .bd-sr-heading{
     margin-bottom: 1rem;
+    opacity: 0.9;
+    font-size: 16px;
+    font-weight: 550;
+    /* word-spacing: 2px; */
+    letter-spacing: 1px;
 }
 
 .bd-sr-readmore{
