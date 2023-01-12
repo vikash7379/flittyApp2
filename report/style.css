@@ -29,7 +29,8 @@ select:focus {
 }
 .report-wrapper {
   max-width: 30rem;
-  margin: 2rem auto 0rem;
+  margin: 0rem auto;
+  padding-top: 5rem;
 }
 
 .report-form {
@@ -88,6 +89,6 @@ select:focus {
 
 @media (max-width: 500px) {
   .report-wrapper {
-    padding: 0 1rem;
+    padding: 5rem 1rem 0;
   }
 }
