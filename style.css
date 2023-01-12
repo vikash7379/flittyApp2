@@ -301,7 +301,10 @@ header {
   padding: 1rem 2rem;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 0px 8px 2px;
   position: relative;
+
 }
+
+
 
 .reviews-FaqsClick {
   display: none;
@@ -333,7 +336,25 @@ header {
 }
 .reviews-wrapper {
   height: 98%;
+  overflow-x: hidden !important;
   overflow: scroll;
+  padding-right: 14px;
+}
+
+.reviews{
+  padding-inline:2rem 10px;
+}
+
+.reviews-wrapper::-webkit-scrollbar{
+  display: block;
+  width: 5px;
+  border-radius: 10px;
+  background-color: darkslategray;
+}
+.reviews-wrapper::-webkit-scrollbar-thumb{
+  background-color:teal;
+  border-radius: 10px;
+
 }
 
 .faqs-title {
