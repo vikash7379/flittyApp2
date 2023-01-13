@@ -14,7 +14,7 @@ let lines = document.querySelector("#toggleBar");
 let closeIcon = document.getElementsByClassName("closeIcon");
 let openIcon = document.getElementsByClassName("openIcon");
 let accor = document.getElementsByClassName("faqs-accor");
-let phone = document.getElementById("phone");
+let phoneInput = document.getElementById("phoneInput");
 let faqsDetails = document.getElementById("faqsDetails");
 let faqsReadmoreP = document.getElementById("faqsReadmoreP");
 const navbar = document.getElementById("navbar");
@@ -22,6 +22,8 @@ let heroDetails = document.getElementById("heroDetails");
 let heroReviews = document.getElementById("heroReviews");
 let detailsCard = document.getElementById("detailsCard");
 let faqsWrap = document.getElementById("faqsWrap");
+// let phoneCodes = document.getElementById("phone-codes");
+let pcValueDisp = document.getElementById("phoneCodeValueDisp");
 
 
 
@@ -63,15 +65,29 @@ for (let i = 0; i < accor.length; i++) {
   });
 }
 
-//  phone
 
-// phone.addEventListener("click", function () {
-//   txt = this.value;
-//   if (txt.length == 3 || txt.length == 7 || txt.length == 12) {
-//     this.value = this.value + " ";
-//   }
-// });
+// add space in phone number
 
+function phoneCodes(pcValue){
+  let phoneCodesSelect = pcValue.value;
+  //  phoneInput.value = phoneCodesSelect ;
+
+   pcValueDisp.innerHTML = phoneCodesSelect;
+}
+
+function addSpaceInPhone(input){
+
+  let value = input.value;
+  value = value.replace(/[^0-9]/g,'');
+  let newValue = "";
+  for (var i=0; i<value.length; i++){
+    if (i === 3 || i === 6 ){
+      newValue += " - ";
+    }
+    newValue += value[i];
+  }
+  input.value = newValue;
+}
 
 
 
